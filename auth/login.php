@@ -1,7 +1,8 @@
 <?php
 // login.php: Maneja la validación de usuario (inicio de sesión)
 
-require 'db.php';
+// Incluir el archivo de conexión a la base de datos
+require '../bd.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Verificar si los campos 'username' y 'password' están presentes en la solicitud POST

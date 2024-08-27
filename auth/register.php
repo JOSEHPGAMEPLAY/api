@@ -2,13 +2,10 @@
 // register.php: Maneja el registro de nuevos usuarios
 
 // Incluir el archivo de conexión a la base de datos
-require 'db.php';
+require '../bd.php';
 
 // Verificar si la solicitud es de tipo POST
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
-    // Depuración: Imprimir el contenido de $_POST para verificar los datos recibidos
-    var_dump($_POST);
 
     // Verificar si los campos 'username' y 'password' están presentes en la solicitud POST
     if (isset($_POST['username']) && isset($_POST['password'])) {
