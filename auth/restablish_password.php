@@ -2,7 +2,7 @@
 // restablish_password.php: Maneja cuando el usuario olvida la contraseña
 
 // Incluir el archivo de conexión a la base de datos
-require 'db.php';
+require 'bd.php';
 
 // Verificar si la solicitud es de tipo POST
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
